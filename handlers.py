@@ -19,7 +19,6 @@ def initBot(bot, lastFrame):
         low = 0
         heigh = lastFrame
         current = 0
-        print("INIT", low,heigh, current)
 
     initData()
 
@@ -73,7 +72,6 @@ def initBot(bot, lastFrame):
         global BASE_ULR
         link = f'{BASE_ULR}/{n}/'
         try:
-            int('lloooo')
             sent_msg = bot.send_photo(chat_id=chatId, photo=link)
             if not finish:
                 text = "Has the rocket launch yet?"
@@ -88,11 +86,11 @@ def initBot(bot, lastFrame):
                 send_photo(chatId,n, True)
 
     def not_valid(message):
-         """
+        """
          Follow up from 'launch_question' whenever an answer from the user is 
          unknown (confused state)
         """
-        text = "Not a valid answer, please use 'yes' or 'no' answers"
+        text = "Unknown answer! If you want to start again type **/start** else please use 'yes' or 'no' answers"
         sent_msg = bot.send_message(message.chat.id, text, parse_mode="Markdown")
 
     def finish(chatId, n):
