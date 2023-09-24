@@ -3,6 +3,7 @@
 This proyect is a Telegram Bot that uses the bisection method to "guess" the exact frame a rocket lauched based on user input.
 
 - API : https://framex-dev.wadrid.net/api/video/
+- Telegram API used: https://pypi.org/project/pyTelegramBotAPI/
 
 # LIVE DEMO
 
@@ -21,3 +22,9 @@ Inside folder:
 - `source venv/bin/activate ` // activates
 - `python3 -m pip install -r requirements.txt ` // install requirements
 - `python bot.py` // run
+
+# Mantainability
+
+- Al functions are documented so that their goal is clear.
+- Code is divided into different files (each one of them is focused on a type of task) and each file has its own small functions (again, each one of them focuses in a small task).
+- clear names for all variables and functions
