@@ -14,7 +14,7 @@ def main():
         bot = telebot.TeleBot(BOT_TOKEN)
         
         initBot(bot,61695)
-        
+        print("initiated bot")
         bot.infinity_polling()
     else:
         print('Error with BOT INIT')
