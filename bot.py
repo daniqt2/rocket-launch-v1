@@ -30,7 +30,7 @@ def webhook():
     bot.remove_webhook()
     print(BOT_TOKEN)
     main()
-    bot.set_webhook(url='https://rocket-launch-bot-48bd3338ef98.herokuapp.com/.herokuapp.com/' + BOT_TOKEN)
+    bot.set_webhook(url='https://rocket-launch-bot-48bd3338ef98.herokuapp.com/' + BOT_TOKEN)
     return "!", 200
 
 
