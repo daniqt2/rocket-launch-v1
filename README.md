@@ -16,12 +16,18 @@ I'll provide a BOT_TOKEN so you can test in develop with `@@rocket_launch_dq_bot
 
 # How to run
 
+### virtualenv
+
 You will need **virtualenv** to be able to start the virtual environment.
 Inside folder:
 
 - `source venv/bin/activate ` // activates
 - `python3 -m pip install -r requirements.txt ` // install requirements
 - `python bot.py` // run
+
+### DOCKER
+
+- `docker-compose up -d` // this will launch the container, if you have the correct BOT_TOKEN it will run
 
 # Mantainability
 
