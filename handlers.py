@@ -7,6 +7,9 @@ heigh = 0
 current = 0
 
 def initBot(bot, lastFrame):
+    """
+        This function initiates the TeleBot handlers, recieves the bot instance and a lastFrame (number == las frame of API)
+    """
     
     def initData():
         """
@@ -100,6 +103,12 @@ def initBot(bot, lastFrame):
         initData()
 
     def NewMidPoint(answer,chatId):
+        """
+        Function in charge of the bisection algorithm, creates a new midpoint every time
+        the user inputs data (has launched / hasn't ). On each iteration the differece between 
+        our heighest and lowest ponts (frames) gets smaller. Once the difference is by 1 frame, we found
+        our target.
+        """
         global current
         global heigh
         global low
