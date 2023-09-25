@@ -14,12 +14,9 @@ def main():
     load_dotenv()
 
     if BOT_TOKEN:
-        port = os.getenv('PORT', default=8000)
-        updater.start_webhook(port=port)
-        
         initBot(bot,61695)
         print("initiated bot")
-        bot.infinity_polling()
+        # bot.infinity_polling()
     else:
         print('Error with BOT INIT')
 
@@ -32,6 +29,7 @@ def getMessage():
 def webhook():
     bot.remove_webhook()
     print(BOT_TOKEN)
+    main()
     bot.set_webhook(url='https://rocket-launch-bot-48bd3338ef98.herokuapp.com/.herokuapp.com/' + BOT_TOKEN)
     return "!", 200
 
