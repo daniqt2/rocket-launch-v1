@@ -25,9 +25,8 @@ Inside folder:
 - `python3 -m pip install -r requirements.txt ` // install requirements
 - `python bot.py` // run
 
-### DOCKER
-
-- `docker-compose up -d` // this will launch the container, if you have the correct BOT_TOKEN it will run
+### FLASK
+- Flask was used in order to be able to deploy to Heroku. Previously this proyect lived inside a DockerContainer for its easy build.
 
 # Mantainability
 
