@@ -1,3 +1,2 @@
-pyTelegramBotAPI
-python-dotenv
-Flask
+pyTelegramBotAPI==4.14.0
+python-dotenv==0.21.1
