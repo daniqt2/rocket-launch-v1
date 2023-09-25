@@ -8,8 +8,8 @@ import flask
 app = flask.Flask(__name__)
 
 WEBHOOK_HOST = os.environ.get('WEBHOOK_HOST')
-WEBHOOK_PORT = os.environ.get('PORT') 
-WEBHOOK_LISTEN = '0.0.0.0'  # In some VPS you may need to put here the IP addr
+WEBHOOK_PORT = os.environ.get('PORT') #  HEROKU DEFAULT VAR
+WEBHOOK_LISTEN = '0.0.0.0'  # Needed for HEROKU 
 
 def main():
     load_dotenv()
