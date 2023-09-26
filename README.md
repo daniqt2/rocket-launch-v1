@@ -24,7 +24,7 @@ Inside folder:
 - `source venv/bin/activate ` // activates
 - `python3 -m pip install -r requirements.txt ` // install requirements
 - `python bot.py` // run
-- visit `http://127.0.0.1:8080` so that the bot activates // This was due to the use of flask for deployment. It could be avoided if we got rid of flask and just deployed the Docker container.
+- visit `http://127.0.0.1:[PORT]`  so that the bot activates // This was due to the use of flask for deployment. It could be avoided if we got rid of flask and just deployed the Docker container.
 
 ### FLASK
 - Flask was used in order to be able to deploy to Heroku. Previously this proyect lived inside a DockerContainer for its easy build.
