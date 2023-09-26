@@ -36,5 +36,6 @@ Inside folder:
 - clear names for all variables and functions
 
 #KOWN ISSUE
-since this bot has no context and shares its variables across users, if you don't see the range 0-61695 when you start please open up : https://rocket-bot-11c5c392a318.herokuapp.com/ so it can be reset. This issue could be solved by adding a context that conects only to the user using the bot.
+- since this bot has no context and shares its variables across users, if you don't see the range 0-61695 when you start please open up : https://rocket-bot-11c5c392a318.herokuapp.com/ so it can be reset. This issue could be solved by adding a context that conects only to the user using the bot.
+- For the same reason, if you don't finish the whole process, to recet the bot please open https://rocket-bot-11c5c392a318.herokuapp.com/ so it can return to its initial state
 
