@@ -34,3 +34,7 @@ Inside folder:
 - Al functions are documented so that their goal is clear.
 - Code is divided into different files (each one of them is focused on a type of task) and each file has its own small functions (again, each one of them focuses in a small task).
 - clear names for all variables and functions
+
+#KOWN ISSUE
+since this bot has no context and shares its variables across users, if you don't see the range 0-61695 when you start please open up : https://rocket-bot-11c5c392a318.herokuapp.com/ so it can be reset. This issue could be solved by adding a context that conects only to the user using the bot.
+
