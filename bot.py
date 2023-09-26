@@ -6,13 +6,13 @@ from handlers import *
 import flask
 
 app = flask.Flask(__name__)
+load_dotenv()
 
-WEBHOOK_HOST = os.environ.get('WEBHOOK_HOST')
-WEBHOOK_PORT = os.environ.get('PORT') #  HEROKU DEFAULT VAR
-WEBHOOK_LISTEN = '0.0.0.0'  # Needed for HEROKU 
+WEBHOOK_PORT = os.environ.get('PORT', 5000) #  HEROKU DEFAULT VAR
+WEBHOOK_LISTEN = '0.0.0.0'  # Needed in this format for HEROKU 
 
 def main():
-    load_dotenv()
+    
 
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
